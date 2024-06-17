@@ -5,9 +5,14 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <a href='https://calendly.com/vegamediain/30min' className='black_btn'>
+          <Link href='/posts' className='black_btn'>
+            All Posts
+          </Link>
+        </li>
+        <li>
+          <Link href='https://calendly.com/vegamediain/30min' className='black_btn'>
             Let's Talk
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
