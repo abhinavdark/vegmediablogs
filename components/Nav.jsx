@@ -1,3 +1,4 @@
+jsx
 import Link from 'next/link';
 
 const Nav = () => {
@@ -5,12 +6,7 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link href='/posts' className='black_btn'>
-            All Posts
-          </Link>
-        </li>
-        <li>
-          <Link href='https://calendly.com/vegamediain/30min' className='black_btn'>
+          <Link href='/about' className='black_btn'>
             Let's Talk
           </Link>
         </li>
@@ -18,7 +14,3 @@ const Nav = () => {
     </nav>
   );
 };
-
-export default Nav;
-
-
