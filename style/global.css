@@ -7,6 +7,11 @@
 /*
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them!
 */
+/* Global Styles */
+
+body {
+    background-color: #361B68; /* Dark blue background */
+}
 
 .main {
     width: 100vw;
@@ -65,13 +70,51 @@
     opacity: 0.15;
 }
 
-@media screen and (max-width: 640px) {
-    .main {
-        padding: 0;
-    }
+/* Floating Elements */
+
+.float-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-/* Tailwind Styles */
+.float-right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.float-top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.float-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Color Palette */
+
+.color-1 {
+    color: #473A2C; /* Dark brown color */
+}
+
+.color-2 {
+    color: #8483BF; /* Dark blue color */
+}
+
+.color-3 {
+    color: #968166; /* Dark orange color */
+}
+
+/* Additional Styles */
 
 .app {
     @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
@@ -142,8 +185,7 @@
 
 .dropdown {
     @apply absolute left-1/2 top-full mt-1 p-5 rounded-lg bg-blue-500 min-w-[210px] max-w-[350px] flex flex-row gap-2 justify-center items-center transform -translate-x-1/2;
-  }
-  
+}
 
 .dropdown_link {
     @apply text-sm font-inter text-gray-700 hover:text-gray-500 font-medium;
