@@ -1,18 +1,13 @@
 import Link from 'next/link';
 
-function Nav() {
+const Nav = () => {
   return (
     <div>
-      <Link href='/posts' className='black_btn'>
-        All Posts
+      <Link href='https://calendly.com/vegamediain/30min' className='black_btn'>
+        Let's Talk
       </Link>
-      <div>
-        <Link href='/about' className='black_btn'>
-          About
-        </Link>
-      </div>
     </div>
   );
-}
+};
 
 export default Nav;
