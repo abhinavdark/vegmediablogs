@@ -5,9 +5,9 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <Link href='https://calendly.com/vegamediain/30min' className='black_btn'>
+          <a href='https://calendly.com/vegamediain/30min' className='black_btn'>
             Let's Talk
-          </Link>
+          </a>
         </li>
       </ul>
     </nav>
@@ -15,4 +15,5 @@ const Nav = () => {
 };
 
 export default Nav;
+
 
