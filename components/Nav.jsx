@@ -25,4 +25,5 @@ const Nav = () => {
   )
 }
 //*max-sm:hidden*//
+export default Nav
 
