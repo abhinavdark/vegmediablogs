@@ -13,7 +13,7 @@ const Nav = () => {
           rel='noopener noreferrer'
           className='black_btn'
         >
-          Let's Talk
+          About
         </a>
       </div>
     </nav>
