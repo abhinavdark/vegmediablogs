@@ -1,16 +1,18 @@
-jsx
 import Link from 'next/link';
 
 const Nav = () => {
   return (
     <nav>
-      <ul>
-        <li>
-          <Link href='/about' className='black_btn'>
-            Let's Talk
-          </Link>
-        </li>
-      </ul>
+      <Link href='/posts' className='black_btn'>
+        All Posts
+      </Link>
+      <div>
+        <Link href='/about' className='black_btn'>
+          About
+        </Link>
+      </div>
     </nav>
   );
 };
+
+export default Nav;
