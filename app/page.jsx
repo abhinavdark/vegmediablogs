@@ -12,7 +12,10 @@ const Home = async () => {
           Welcome To Blog
           <br className="max-md:hidden" />
           <span className="blue_gradient text-center">VegaMedia</span>
-        </h1><Link href="https://vegamedia.online"><p className="desc text-center"></p></Link>
+        </h1>
+        <Link href="https://vegamedia.online">
+          <p className="desc text-center max-md:text-sm">Visit VegaMedia Online</p>
+        </Link>
       </section>
       <div className="py-7">
         <h2 className="head_text text-center">
@@ -22,10 +25,9 @@ const Home = async () => {
           <div className='flex-col gap-6 mt-6'>
             {posts?.slice().reverse().map(post => (
               <Link href={`posts/${encodeURIComponent(post.title)}`} key={post?.title} className='p-8 rounded-md shadow-md flex hover:bg-blue-400 pr-2'>
-
                 <h3 className='text-2xl font-semibold'>{post.title}</h3>
-                <p className='mt-2 text-sm px-10'>By {post.author}</p>
-                <time className='text-[12px] text-gray-600 px-10 mt-3'>
+                <p className='mt-2 text-sm px-10 max-md:text-xs'>By {post.author}</p>
+                <time className='text-[12px] text-gray-600 px-10 mt-3 max-md:text-[10px]'>
                   {post.publishDate}
                 </time>
               </Link>
