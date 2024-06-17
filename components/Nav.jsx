@@ -1,19 +1,18 @@
-import React from 'react'
-import Link from "next/link";
+import Link from 'next/link';
 
-const Nav = () => {
+function Nav() {
   return (
-       
-
+    <div>
+      <Link href='/posts' className='black_btn'>
+        All Posts
       </Link>
-      <Link href='/posts' className='black_btn'>All Posts</Link>
-
-          <div><Link href='/about' className='black_btn'>
-              About Me
-            </Link></div>
-        </nav>
-
-  )
+      <div>
+        <Link href='/about' className='black_btn'>
+          About
+        </Link>
+      </div>
+    </div>
+  );
 }
-//*max-sm:hidden*//
-export default Nav
+
+export default Nav;
