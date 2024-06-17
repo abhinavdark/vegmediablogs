@@ -13,12 +13,12 @@ const Nav = () => {
           height={50}
           className='object-contain'
         />
-          
+
       </Link>
       <Link href='/posts' className='black_btn'>All Posts</Link>
-      
-          <div><Link href='https://calendly.com/vegamediain/30min' className='black_btn'>
-              Let's Talk
+
+          <div><Link href='/about' className='black_btn'>
+              About Me
             </Link></div>
         </nav>
 
@@ -26,4 +26,3 @@ const Nav = () => {
 }
 //*max-sm:hidden*//
 export default Nav
-
