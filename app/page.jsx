@@ -9,10 +9,10 @@ const Home = async () => {
     <div>
       <section className="w-full flex-center flex-col">
         <h1 className="head_text text-center py-2">
-          Welcome To My Blog
+          Welcome To Blog
           <br className="max-md:hidden" />
-          <span className="blue_gradient text-center">DEVCUT</span>
-        </h1><Link href="https://github.com/ZaneFerns360"><p className="desc text-center">Made by ZaneFerns360</p></Link>
+          <span className="blue_gradient text-center">VegaMedia</span>
+        </h1><Link href="https://vegamedia.online"><p className="desc text-center"></p></Link>
       </section>
       <div className="py-7">
         <h2 className="head_text text-center">
